@@ -4,7 +4,7 @@
 This project implements a MapReduce job using Hadoop to analyze the Diabetes Clinical Dataset (100,000 rows) to compute the average HbA1c level by gender and race, identifying patterns in diabetes risk factors.
 
 ## Dataset
-- **Source**: Diabetes Clinical Dataset (publicly available, e.g., Kaggle).
+- **Source**: Diabetes Clinical Dataset (Kaggle: https://www.kaggle.com/datasets/ziya07/diabetes-clinical-dataset100k-rows).
 - **Description**: Contains 100,000 rows with columns: year, gender, age, location, race (AfricanAmerican, Asian, Caucasian, Hispanic, Other), hypertension, heart_disease, smoking_history, bmi, hbA1c_level, blood_glucose_level, diabetes, clinical_notes.
 - **Task**: Calculate average HbA1c level for each gender-race combination.
 
