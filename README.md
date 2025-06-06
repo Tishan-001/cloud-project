@@ -126,13 +126,18 @@ This project implements a MapReduce job using Hadoop to analyze the Diabetes Cli
 4. **Run the MapReduce Job**:
    - Execute the job:
      ```bash
-     hadoop jar target/diabetes-mapreduce-1.0.jar DiabetesMapReduce /input/diabetes.csv /output
+     hadoop jar target/DiabetesAnalysis-1.0-SNAPSHOT.jar DiabetesMapReduce /input/diabetes.csv /output/diabetes_analysis
      ```
+     
+     ![running-result](/Images/runing-result.jpg)
    - Retrieve results:
      ```bash
-     hdfs dfs -cat /output/part-r-00000
+     hdfs dfs -cat /output/diabetes_analysis/part-r-00000
      ```
 
 ## Output
 - **Format**: `gender_race<TAB>average_HbA1c`
 - **Example**:
+    ![output](/Images/output.jpg)
+    
+    ![data-node](/Images/data-node.jpg)
